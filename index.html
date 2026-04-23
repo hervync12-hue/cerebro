@@ -7,11 +7,25 @@
     <title>Brain Anatomy Puzzle</title>
 </head>
 <body>
-    <div id="puzzle-area">
-        <!-- Puzzle area -->
+    <h1>Brain Anatomy Puzzle</h1>
+    <div id="brain-area">
+        <svg id="brain-svg" viewBox="0 0 1000 400">
+            <path d="..." fill="#cccccc" stroke="#666666" />
+            <!-- SVG brain outline here -->
+        </svg>
+        <div id="target-zones">
+            <!-- Target zones for puzzle pieces -->
+        </div>
     </div>
-    <div id="pieces-area">
-        <!-- Puzzle pieces area -->
+    <div id="pieces-container">
+        <!-- Draggable brain pieces will be here -->
+    </div>
+    <div id="progress-tracker">
+        <p>Progress: <span id="progress">0</span>/13</p>
+    </div>
+    <div id="celebration-screen" style="display:none;">
+        <h2>Congratulations!</h2>
+        <p>You completed the puzzle!</p>
     </div>
     <script src="script.js"></script>
 </body>
